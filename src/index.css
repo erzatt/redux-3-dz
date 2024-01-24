@@ -1,0 +1,131 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #ff5733; /* Новый основной цвет текста */
+  font-weight: bold;
+  background: linear-gradient(#45aaf2, rgb(22, 22, 22), rgb(112, 38, 161));
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  display: block;
+  background-color: #16481a; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 95%;
+  position: fixed;
+  top: 0;
+  transition: 0.3s;
+}
+
+p {
+  color: #3d9970; 
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #de2828;
+}
+
+a {
+  width: 100%;
+  font-family: fantasy;
+  color: #e3d33d; 
+  text-decoration: inherit;
+  transition: 0.2s;
+}
+a:hover {
+  color: #9933ff;
+  text-shadow: 2px 2px 4px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 40px;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #e3d33d;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #647cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.list {
+  display: flex;
+  border: 2px solid #343a40;
+  border-radius: 3px;
+  width: 300px;
+  height: auto;
+  list-style-type: none;
+  background: linear-gradient(#5bc0de, #9d71ff);
+}
+.list li {
+  padding: 10px 20px;
+  border: 3px solid #07ff24;
+  background-color: #33587e;
+}
+.list li:hover {
+  background: linear-gradient(#5bc0de, #9d71ff);
+  color: #0c080d;
+  border: 3px double #495057;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px #000;
+}
+
+span {
+  color: #3b0ac3;
+
+}
+
+h2 {
+  color: #0ac571;
+  font-weight: lighter;
+
+}
+
+h3 {
+  color: #e3d33d;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
